@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="75dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    android:id="@+id/matiere_cardview"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:id="@+id/background_color"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:background="@color/card2"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/filetitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:text="Introduction Java"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/filedetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="38dp"
+            android:text="65 pages  - 125 kb "
+            android:textSize="15sp" />
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

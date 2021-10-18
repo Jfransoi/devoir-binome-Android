@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    android:id="@+id/programme_cardview"
+    android:background="@color/ProgCard"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="15dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            android:id="@+id/group_card_color"
+            app:cardElevation="6dp">
+
+            <RelativeLayout
+                android:id="@+id/side_bar_color"
+                android:layout_width="15dp"
+                android:layout_height="100dp"
+                android:background="@color/card2"
+                android:padding="5dp">
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/programtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Groupe : PR123"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/programdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="5dp"
+                android:text="Lundi : 8h - 13h \nMercredi : 9h - 14h \nVendredi: 15h - 19h "
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
